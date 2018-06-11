@@ -11,7 +11,7 @@ export default class Button extends Component {
 		return(
 			<div className={'center'}>
 				<div className={'overlay'}>
-					<Image cloudName="rcstraus" publicId={this.props.publicId} width="300" crop="scale"/>
+					<Image cloudName="<cloud_name>" publicId={this.props.publicId} width="300" crop="scale"/>
 				</div>
 				<input className={'smlBtn'} />
 			</div>
