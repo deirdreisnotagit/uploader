@@ -41,4 +41,27 @@ In Button.js import { Image } from 'cloudinary-react';
 Step 6: 
 Creat upload preset on cloudinary console. Paste cloud name and preset to upload widget function. Add cloudname to Image tag on Button.js 
 
+Step 7:
+Play around with SDK components 
+
+For example, in App.js, add-
+```
+ <span className={'pads'}>
+                    <Image cloudName="<cloud_name>" publicId={this.state.publicId} effect="blur:300" width="300">
+                      <Transformation angle="45"/>
+                    </Image>
+                  </span>
+                  <span className={'pads'}>
+                    <Image cloudName="<cloud_name>" publicId={this.state.publicId} >
+                      <Transformation width="300" effect="sepia" crop="scale"/>
+                    </Image>
+                  </span>
+                  <span className={'pads'}>
+                    <Image cloudName="<cloud_name>" publicId={this.state.publicId} >
+                      <Transformation width="300" effect="grayscale" crop="scale"/>
+                    </Image>
+                  </span>
+```
+
+
 
